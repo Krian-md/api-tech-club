@@ -1,0 +1,8 @@
+
+*.[oa]
+
+*~
+
+dist/
+
+node_modules

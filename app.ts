@@ -1,4 +1,6 @@
-import express, {Application, Request, Response} from 'express';
+// Eslint + prettier: https://gist.github.com/mckeeh3/4b6a4ab008329b182fc80fbe85cc9aff
+
+import express, { Application, Request, Response } from 'express';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -6,22 +8,13 @@ dotenv.config();
 const app: Application = express();
 const PORT = process.env.PORT || 8000;
 
-app.get('/', (req: Request, res: Response):void => {
-    res.send('<h4>Node.js and typescript! What the hell!</h4>');
-})
+app.get('/', (req: Request, res: Response): void => {
+  res.send('<h4>Node.js and typescript! What the hell!</h4>');
+});
 
-app.listen(PORT, ():void => {
-    console.log(`Server is running at http://localhost:${PORT}/`);
-})
-
-
-
-
-
-
-
-
-
+app.listen(PORT, (): void => {
+  console.log(`Server is running at http://localhost:${PORT}/`);
+});
 
 // 'use strict';
 // https://habr.com/ru/company/ruvds/blog/321104/

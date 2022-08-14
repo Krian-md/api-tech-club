@@ -19,6 +19,7 @@ module.exports = {
   plugins: ['vue', '@typescript-eslint'],
   rules: {
     'no-console': 1,
+    '@typescript-eslint/no-var-requires': 0,
   },
 };
 

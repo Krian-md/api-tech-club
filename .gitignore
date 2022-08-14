@@ -1,8 +1,6 @@
 
-*.[oa]
-
-*~
-
-dist/
-
+/dist
 node_modules
+
+# Editor directories and files
+.vscode
